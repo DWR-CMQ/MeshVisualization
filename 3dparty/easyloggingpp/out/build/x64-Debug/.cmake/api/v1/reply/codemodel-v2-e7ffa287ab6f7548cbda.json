@@ -1,0 +1,56 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "3rd_easyloggingpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-3rd_easyloggingpp-Debug-cdddaa8dccde4b7fe355.json",
+					"name" : "3rd_easyloggingpp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/VS/QtInVS2019/MeshPro1/3dparty/easyloggingpp/out/build/x64-Debug",
+		"source" : "E:/VS/QtInVS2019/MeshPro1/3dparty/easyloggingpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

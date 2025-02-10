@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BilaterialNormalFiltering</class>
+ <widget class="QDialog" name="BilaterialNormalFiltering">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>277</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>248</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>88</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_c">
+      <property name="text">
+       <string>Sigmal_s</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_c"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>48</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_s">
+      <property name="text">
+       <string>Sigmal_c</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_s"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>8</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_scheme">
+      <property name="text">
+       <string>Scheme</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_scheme"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>128</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_norm_iteration">
+      <property name="text">
+       <string>Norm Iteration</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBox_norm_iteration"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>168</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QLabel" name="label_smoothness">
+      <property name="text">
+       <string>Smoothness</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QDoubleSpinBox" name="doubleSpinBox_smoothness"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>208</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QLabel" name="label_vertex_iteration">
+      <property name="text">
+       <string>Vertex Iteration</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBox_vertex_iteration"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>BilaterialNormalFiltering</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

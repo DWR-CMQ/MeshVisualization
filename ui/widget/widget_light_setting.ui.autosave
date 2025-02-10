@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget_light_setting</class>
+ <widget class="QWidget" name="widget_light_setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>277</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>widget_light_setting</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="WidgetCheckerSphere" name="checkerSphere">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout_4"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>WidgetCheckerSphere</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">widget_checker_sphere.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

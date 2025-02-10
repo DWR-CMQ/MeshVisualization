@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5DFC371-53D3-48DE-B804-2FB379AD94B3}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>MeshProcess</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;opengl;gui;widgets;openglextensions</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>E:\VS\QtInVS2019\MeshPro1\3dparty;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\VS\QtInVS2019\MeshPro1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\VS\QtInVS2019\MeshPro1\3dparty\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_DEPRECATED_WARNINGS;GLEW_BUILD;GLEW_NO_GLU;_CRT_SECURE_NO_WARNINGS;QT_USE_QSTRINGBUILDER;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;NOMINMAX;WIN32_LEAN_AND_MEAN;VC_EXTRALEAN;Easy3D_VERSION_MAJOR=2;Easy3D_VERSION_MINOR=5;Easy3D_VERSION_PATCH=4;Easy3D_VERSION_STRING="2.5.4";Easy3D_VERSION_NUMBER=1020504;ELPP_FEATURE_ALL;ELPP_STL_LOGGING;ELPP_THREAD_SAFE;ELPP_NO_DEFAULT_LOG_FILE;ELPP_DISABLE_DEFAULT_CRASH_HANDLING;ELPP_AS_DLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;3rd_rply.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="algo\base_denoise.cpp" />
+    <ClCompile Include="algo\bilaterial_denoise.cpp" />
+    <ClCompile Include="algo\mesh_smooth.cpp" />
+    <ClCompile Include="core\normals.cpp" />
+    <ClCompile Include="core\surface_mesh_geometry.cpp" />
+    <ClCompile Include="fileio\graph_io_ply.cpp" />
+    <ClCompile Include="fileio\image_io.cpp" />
+    <ClCompile Include="fileio\ply_reader_writer.cpp" />
+    <ClCompile Include="fileio\poly_mesh_io.cpp" />
+    <ClCompile Include="fileio\surface_mesh_io.cpp" />
+    <ClCompile Include="fileio\surface_mesh_io_obj.cpp" />
+    <ClCompile Include="fileio\surface_mesh_io_ply.cpp" />
+    <ClCompile Include="fileio\translator.cpp" />
+    <ClCompile Include="paint_canvas.cpp" />
+    <ClCompile Include="renderer\ambient_occlusion.cpp" />
+    <ClCompile Include="renderer\average_color_blending.cpp" />
+    <ClCompile Include="renderer\buffer.cpp" />
+    <ClCompile Include="renderer\camera.cpp" />
+    <ClCompile Include="renderer\clipping_plane.cpp" />
+    <ClCompile Include="renderer\constraint.cpp" />
+    <ClCompile Include="renderer\drawable.cpp" />
+    <ClCompile Include="renderer\drawable_lines.cpp" />
+    <ClCompile Include="renderer\drawable_points.cpp" />
+    <ClCompile Include="renderer\drawable_triangles.cpp" />
+    <ClCompile Include="renderer\dual_depth_peeling.cpp" />
+    <ClCompile Include="renderer\eye_dome_lighting.cpp" />
+    <ClCompile Include="renderer\frame.cpp" />
+    <ClCompile Include="renderer\framebuffer_object.cpp" />
+    <ClCompile Include="renderer\frustum.cpp" />
+    <ClCompile Include="renderer\key_frame_interpolator.cpp" />
+    <ClCompile Include="renderer\manipulated_camera_frame.cpp" />
+    <ClCompile Include="renderer\manipulated_frame.cpp" />
+    <ClCompile Include="renderer\manipulator.cpp" />
+    <ClCompile Include="renderer\opengl.cpp" />
+    <ClCompile Include="renderer\opengl_error.cpp" />
+    <ClCompile Include="renderer\opengl_timer.cpp" />
+    <ClCompile Include="renderer\opengl_util.cpp" />
+    <ClCompile Include="renderer\read_pixel.cpp" />
+    <ClCompile Include="renderer\renderer.cpp" />
+    <ClCompile Include="renderer\shader_manager.cpp" />
+    <ClCompile Include="renderer\shader_program.cpp" />
+    <ClCompile Include="renderer\shadow.cpp" />
+    <ClCompile Include="renderer\shape.cpp" />
+    <ClCompile Include="renderer\soft_shadow.cpp" />
+    <ClCompile Include="renderer\state.cpp" />
+    <ClCompile Include="renderer\texture.cpp" />
+    <ClCompile Include="renderer\texture_manager.cpp" />
+    <ClCompile Include="renderer\text_renderer.cpp" />
+    <ClCompile Include="renderer\transform.cpp" />
+    <ClCompile Include="renderer\transform_decompose.cpp" />
+    <ClCompile Include="renderer\vertex_array_object.cpp" />
+    <ClCompile Include="ui\dialog\dialog_bilaterial_normal_filtering.cpp" />
+    <ClCompile Include="ui\widget\widget_checker_sphere.cpp" />
+    <ClCompile Include="ui\widget\widget_light_setting.cpp" />
+    <ClCompile Include="util\console_style.cpp" />
+    <ClCompile Include="util\dialog.cpp" />
+    <ClCompile Include="util\file_system.cpp" />
+    <ClCompile Include="util\initializer.cpp" />
+    <ClCompile Include="util\logging.cpp" />
+    <ClCompile Include="util\progress.cpp" />
+    <ClCompile Include="util\resource.cpp" />
+    <ClCompile Include="util\setting.cpp" />
+    <ClCompile Include="util\stop_watch.cpp" />
+    <ClCompile Include="util\string.cpp" />
+    <ClCompile Include="util\version.cpp" />
+    <ClCompile Include="walk_through.cpp" />
+    <QtRcc Include="assets.qrc" />
+    <QtUic Include="MeshProcess.ui" />
+    <QtMoc Include="mesh_window.h" />
+    <ClCompile Include="core\graph.cpp" />
+    <ClCompile Include="core\matrix_algo.cpp" />
+    <ClCompile Include="core\model.cpp" />
+    <ClCompile Include="core\point_cloud.cpp" />
+    <ClCompile Include="core\poly_mesh.cpp" />
+    <ClCompile Include="core\surface_mesh.cpp" />
+    <ClCompile Include="core\surface_mesh_builder.cpp" />
+    <ClCompile Include="mesh_window.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="ui\dialog\dialog_bilaterial_normal_filtering.ui" />
+    <QtUic Include="ui\widget\widget_light_setting.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algo\base_denoise.h" />
+    <ClInclude Include="algo\bilaterial_denoise.h" />
+    <ClInclude Include="algo\mesh_smooth.h" />
+    <ClInclude Include="canvas.h" />
+    <ClInclude Include="core\box.h" />
+    <ClInclude Include="core\constant.h" />
+    <ClInclude Include="core\curve.h" />
+    <ClInclude Include="core\eigen_solver.h" />
+    <ClInclude Include="core\graph.h" />
+    <ClInclude Include="core\hash.h" />
+    <ClInclude Include="core\heap.h" />
+    <ClInclude Include="core\line.h" />
+    <ClInclude Include="core\mat.h" />
+    <ClInclude Include="core\matrix.h" />
+    <ClInclude Include="core\matrix_algo.h" />
+    <ClInclude Include="core\model.h" />
+    <ClInclude Include="core\normals.h" />
+    <ClInclude Include="core\oriented_line.h" />
+    <ClInclude Include="core\plane.h" />
+    <ClInclude Include="core\point_cloud.h" />
+    <ClInclude Include="core\polygon.h" />
+    <ClInclude Include="core\poly_mesh.h" />
+    <ClInclude Include="core\principal_axes.h" />
+    <ClInclude Include="core\property.h" />
+    <ClInclude Include="core\quat.h" />
+    <ClInclude Include="core\random.h" />
+    <ClInclude Include="core\rect.h" />
+    <ClInclude Include="core\segment.h" />
+    <ClInclude Include="core\signal.h" />
+    <ClInclude Include="core\spline_curve_fitting.h" />
+    <ClInclude Include="core\spline_curve_interpolation.h" />
+    <ClInclude Include="core\spline_interpolation.h" />
+    <ClInclude Include="core\surface_mesh.h" />
+    <ClInclude Include="core\surface_mesh_builder.h" />
+    <ClInclude Include="core\surface_mesh_geometry.h" />
+    <ClInclude Include="core\types.h" />
+    <ClInclude Include="core\vec.h" />
+    <ClInclude Include="fileio\image_io.h" />
+    <ClInclude Include="fileio\ply_reader_writer.h" />
+    <ClInclude Include="fileio\poly_mesh_io.h" />
+    <ClInclude Include="fileio\surface_mesh_io.h" />
+    <ClInclude Include="fileio\translator.h" />
+    <QtMoc Include="ui\dialog\dialog_bilaterial_normal_filtering.h" />
+    <QtMoc Include="ui\widget\widget_light_setting.h" />
+    <QtMoc Include="ui\widget\widget_checker_sphere.h" />
+    <ClInclude Include="walk_through.h" />
+    <QtMoc Include="paint_canvas.h" />
+    <ClInclude Include="renderer\ambient_occlusion.h" />
+    <ClInclude Include="renderer\average_color_blending.h" />
+    <ClInclude Include="renderer\buffer.h" />
+    <ClInclude Include="renderer\camera.h" />
+    <ClInclude Include="renderer\clipping_plane.h" />
+    <ClInclude Include="renderer\constraint.h" />
+    <ClInclude Include="renderer\drawable.h" />
+    <ClInclude Include="renderer\drawable_lines.h" />
+    <ClInclude Include="renderer\drawable_points.h" />
+    <ClInclude Include="renderer\drawable_triangles.h" />
+    <ClInclude Include="renderer\dual_depth_peeling.h" />
+    <ClInclude Include="renderer\eye_dome_lighting.h" />
+    <ClInclude Include="renderer\frame.h" />
+    <ClInclude Include="renderer\framebuffer_object.h" />
+    <ClInclude Include="renderer\frustum.h" />
+    <ClInclude Include="renderer\key_frame_interpolator.h" />
+    <ClInclude Include="renderer\manipulated_camera_frame.h" />
+    <ClInclude Include="renderer\manipulated_frame.h" />
+    <ClInclude Include="renderer\manipulator.h" />
+    <ClInclude Include="renderer\opengl.h" />
+    <ClInclude Include="renderer\opengl_error.h" />
+    <ClInclude Include="renderer\opengl_timer.h" />
+    <ClInclude Include="renderer\opengl_util.h" />
+    <ClInclude Include="renderer\read_pixel.h" />
+    <ClInclude Include="renderer\renderer.h" />
+    <ClInclude Include="renderer\shader_manager.h" />
+    <ClInclude Include="renderer\shader_program.h" />
+    <ClInclude Include="renderer\shadow.h" />
+    <ClInclude Include="renderer\shape.h" />
+    <ClInclude Include="renderer\soft_shadow.h" />
+    <ClInclude Include="renderer\state.h" />
+    <ClInclude Include="renderer\texture.h" />
+    <ClInclude Include="renderer\texture_manager.h" />
+    <ClInclude Include="renderer\text_renderer.h" />
+    <ClInclude Include="renderer\transform.h" />
+    <ClInclude Include="renderer\transform_decompose.h" />
+    <ClInclude Include="renderer\transparency.h" />
+    <ClInclude Include="renderer\vertex_array_object.h" />
+    <ClInclude Include="util\console_style.h" />
+    <ClInclude Include="util\dialog.h" />
+    <ClInclude Include="util\export.h" />
+    <ClInclude Include="util\file_system.h" />
+    <ClInclude Include="util\initializer.h" />
+    <ClInclude Include="util\line_stream.h" />
+    <ClInclude Include="util\logging.h" />
+    <ClInclude Include="util\progress.h" />
+    <ClInclude Include="util\resource.h" />
+    <ClInclude Include="util\setting.h" />
+    <ClInclude Include="util\stop_watch.h" />
+    <ClInclude Include="util\string.h" />
+    <ClInclude Include="util\timer.h" />
+    <ClInclude Include="util\tokenizer.h" />
+    <ClInclude Include="util\version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

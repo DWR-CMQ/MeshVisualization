@@ -1,0 +1,38 @@
+ply
+format ascii 1.0
+element vertex 8
+property float32 x
+property float32 y
+property float32 z
+property uint8 red                     
+property uint8 green
+property uint8 blue
+element face 7
+property list uint8 int32 vertex_index 
+element edge 5                         
+property int32 vertex1                 
+property int32 vertex2                 
+property uint8 red                     
+property uint8 green
+property uint8 blue
+end_header
+0 0 0 255 0 0                          
+0 0 1 255 0 0
+0 1 1 255 0 0
+0 1 0 255 0 0
+1 0 0 0 0 255
+1 0 1 0 0 255
+1 1 1 0 0 255
+1 1 0 0 0 255
+3 0 1 2                           
+3 0 2 3                           
+4 7 6 5 4                         
+4 0 4 5 1
+4 1 5 6 2
+4 2 6 7 3
+4 3 7 4 0
+0 1 255 255 255                   
+1 2 255 255 255
+2 3 255 255 255
+3 0 255 255 255
+2 0 0 0 0                         

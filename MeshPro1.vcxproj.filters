@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{b10c5418-ed7e-42a3-8b5a-ee250a2fd7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{3f0f44b2-7276-4d85-a1cd-e000c5046236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderer">
+      <UniqueIdentifier>{96a5c19b-f596-495e-9790-b1585f13ef5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fileio">
+      <UniqueIdentifier>{4898f543-ab65-4933-8aee-20bdc7210eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algo">
+      <UniqueIdentifier>{01d3c9fb-4961-4c0b-9f50-1066030ecf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{b2db40c1-afbb-4b6a-82b8-90b712b817d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\widget">
+      <UniqueIdentifier>{c8099b35-9f06-40f3-8e85-9fe3fefa98ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\dialog">
+      <UniqueIdentifier>{966eb715-55f7-4036-8efd-e566b5b70791}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="assets.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="MeshProcess.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="mesh_window.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="mesh_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core\graph.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\matrix_algo.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\model.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\point_cloud.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\poly_mesh.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\surface_mesh.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\surface_mesh_builder.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="util\console_style.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\dialog.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\file_system.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\initializer.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\logging.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\progress.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\resource.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\setting.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\stop_watch.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\string.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\version.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\ambient_occlusion.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\average_color_blending.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\buffer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\camera.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\clipping_plane.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\constraint.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\drawable.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\drawable_lines.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\drawable_points.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\drawable_triangles.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\dual_depth_peeling.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\eye_dome_lighting.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\frame.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\framebuffer_object.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\frustum.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\key_frame_interpolator.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\manipulated_camera_frame.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\manipulated_frame.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\manipulator.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\opengl.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\opengl_error.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\opengl_timer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\opengl_util.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\read_pixel.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\renderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\shader_manager.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\shader_program.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\shadow.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\shape.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\soft_shadow.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\state.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\text_renderer.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\texture.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\texture_manager.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\transform.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\transform_decompose.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer\vertex_array_object.cpp">
+      <Filter>renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\graph_io_ply.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\image_io.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\poly_mesh_io.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\surface_mesh_io.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\translator.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="paint_canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walk_through.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\ply_reader_writer.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\surface_mesh_io_ply.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="algo\mesh_smooth.cpp">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="fileio\surface_mesh_io_obj.cpp">
+      <Filter>fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="algo\base_denoise.cpp">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="algo\bilaterial_denoise.cpp">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="core\normals.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\surface_mesh_geometry.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\dialog\dialog_bilaterial_normal_filtering.cpp">
+      <Filter>ui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\widget\widget_light_setting.cpp">
+      <Filter>ui\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\widget\widget_checker_sphere.cpp">
+      <Filter>ui\widget</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\box.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\constant.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\curve.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\eigen_solver.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\graph.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\hash.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\heap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\line.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\mat.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\matrix.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\matrix_algo.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\model.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\oriented_line.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\plane.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\point_cloud.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\poly_mesh.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\polygon.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\principal_axes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\property.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\quat.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\random.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\rect.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\segment.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\signal.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\spline_curve_fitting.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\spline_curve_interpolation.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\spline_interpolation.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\surface_mesh.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\surface_mesh_builder.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\types.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\vec.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="util\console_style.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\dialog.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\export.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\file_system.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\initializer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\line_stream.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\logging.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\progress.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\resource.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\setting.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\stop_watch.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\string.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\timer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\tokenizer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\version.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\ambient_occlusion.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\average_color_blending.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\buffer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\camera.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\clipping_plane.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\constraint.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\drawable.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\drawable_lines.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\drawable_points.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\drawable_triangles.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\dual_depth_peeling.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\eye_dome_lighting.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\frame.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\framebuffer_object.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\frustum.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\key_frame_interpolator.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\manipulated_camera_frame.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\manipulated_frame.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\manipulator.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\opengl.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\opengl_error.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\opengl_timer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\opengl_util.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\read_pixel.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\renderer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\shader_manager.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\shader_program.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\shadow.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\shape.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\soft_shadow.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\state.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\text_renderer.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\texture.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\texture_manager.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\transform.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\transform_decompose.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\transparency.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer\vertex_array_object.h">
+      <Filter>renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="fileio\image_io.h">
+      <Filter>fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="fileio\poly_mesh_io.h">
+      <Filter>fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="fileio\surface_mesh_io.h">
+      <Filter>fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="fileio\translator.h">
+      <Filter>fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="canvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="walk_through.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileio\ply_reader_writer.h">
+      <Filter>fileio</Filter>
+    </ClInclude>
+    <ClInclude Include="algo\mesh_smooth.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algo\base_denoise.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="algo\bilaterial_denoise.h">
+      <Filter>algo</Filter>
+    </ClInclude>
+    <ClInclude Include="core\normals.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\surface_mesh_geometry.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="paint_canvas.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\dialog\dialog_bilaterial_normal_filtering.h">
+      <Filter>ui\dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\widget\widget_light_setting.h">
+      <Filter>ui\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="ui\widget\widget_checker_sphere.h">
+      <Filter>ui\widget</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ui\dialog\dialog_bilaterial_normal_filtering.ui">
+      <Filter>ui\dialog</Filter>
+    </QtUic>
+    <QtUic Include="ui\widget\widget_light_setting.ui">
+      <Filter>ui\widget</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>
